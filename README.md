@@ -19,6 +19,7 @@ npm install --legacy-peer-deps
 3. Create a `.env` file in the project root directory with the following variables:
 
 SLIDER_API_TOKEN=Announcements Token
+
 STORY_API_TOKEN=Hero Slider Token
 
 4. To run the project on Android, use the following command:
