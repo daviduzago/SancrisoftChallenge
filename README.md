@@ -1,79 +1,44 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# Sancrisoft Challenge Mini App
 
-# Getting Started
+Welcome to the Sancrisoft Challenge Mini App! This app is designed to showcase a video slider component using React Native.
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+## Getting Started
 
-## Step 1: Start the Metro Server
+To get started with the app, follow these instructions:
 
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
+1. Clone the app repository:
 
-To start Metro, run the following command from the _root_ of your React Native project:
+git clone https://github.com/daviduzago/SancrisoftChallenge.git
 
-```bash
-# using npm
-npm start
+2. Install the required dependencies using npm:
 
-# OR using Yarn
-yarn start
-```
+npm install --legacy-peer-deps
 
-## Step 2: Start your Application
+- Note: We use the `--legacy-peer-deps` flag because we use a package for handling SVG URIs, which avoids the need to build a custom SVG component that can accept URLs as inputs.
 
-Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
+3. Create a `.env` file in the project root directory with the following variables:
 
-### For Android
+SLIDER_API_TOKEN=Announcements Token
+STORY_API_TOKEN=Hero Slider Token
 
-```bash
-# using npm
-npm run android
+4. To run the project on Android, use the following command:
 
-# OR using Yarn
-yarn android
-```
+npx react-native run-android
 
-### For iOS
 
-```bash
-# using npm
-npm run ios
+To run the project on iOS, use the following command:
 
-# OR using Yarn
-yarn ios
-```
+npx react-native run-ios
 
-If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
+## Important Note
 
-This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
+Please be aware that the videos used in this app are quite large, approximately 80MB each. This is not recommended for a video slider component as it can affect performance. For better performance, we should consider compressing or streaming these videos on the backend for better app performance. In this app, we have not compressed the videos or stored them on the device to avoid memory and performance issues.
 
-## Step 3: Modifying your App
+## Questions and Support
 
-Now that you have successfully run the app, let's modify it.
+If you have any questions or need further assistance, feel free to reach out to reach me. I will be happy to assist you with any inquiries related to the app.
 
-1. Open `App.tsx` in your text editor of choice and edit some lines.
-2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
+Thank you for your consideration!
 
-   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
 
-## Congratulations! :tada:
 
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
